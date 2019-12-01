@@ -1,0 +1,6 @@
+
+{
+    "mongoURI":
+      "mongodb+srv://ElijahKeane:dataRep@cluster0-xvvnc.mongodb.net/test?retryWrites=true&w=majority"
+
+}
