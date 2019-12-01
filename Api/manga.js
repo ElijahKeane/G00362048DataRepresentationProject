@@ -26,7 +26,7 @@ router.get('/:id', (req, res) => {
 //adds/saves manga
 router.post('/', (req, res) => {
   Manga.create(req.body)
-    .then(manga => res.json({ msg: 'Manga added successfully' }))
+    .then(manga => res.json({ msg: 'Manga successfully added' }))
     .catch(err => res.status(400).json({ error: 'Unable to add this manga' }));
 });
 
@@ -42,8 +42,8 @@ router.put('/:id', (req, res) => {
 //delets manga using the id
 router.delete('/:id', (req, res) => {
   Manga.findByIdAndRemove(req.params.id, req.body)
-    .then(manga => res.json({ mgs: 'Manga entry deleted successfully' }))
-    .catch(err => res.status(404).json({ error: 'No such a manga' }));
+    .then(manga => res.json({ mgs: 'Manga entry successfully deleted' }))
+    .catch(err => res.status(404).json({ error: 'No such manga' }));
 });
 
 module.exports = router;
